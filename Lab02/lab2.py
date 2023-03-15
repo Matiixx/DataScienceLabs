@@ -26,7 +26,7 @@ groups = df_pca.groupby(2)
 fig, axs = plt.subplots(2)
 
 for name, group in groups:
-    axs[0].plot(group[0], group[1], marker="o", linestyle="", label=name)
+  axs[0].plot(group[0], group[1], marker="o", linestyle="", label=name)
 axs[0].legend()
 
 pca = PCA(n_components=None)
@@ -49,7 +49,7 @@ df_tsne.insert(2, 2, list(df.iloc[:, -1]))
 
 groups = df_tsne.groupby(2)
 for name, group in groups:
-    axs[1].plot(group[0], group[1], marker="o", linestyle="", label=name)
+  axs[1].plot(group[0], group[1], marker="o", linestyle="", label=name)
 
 plt.legend()
 plt.show()
